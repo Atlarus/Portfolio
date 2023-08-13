@@ -8,6 +8,9 @@ const MaintenancePage = () => {
             We are currently working on improving our website to serve you better.
             Please check back later.
           </p>
+          <p className="text-gray-600">
+            Looking for customized digital solutions?
+          </p>
           <div className="mt-6">
             <p className="text-gray-600">Contact us:</p>
             <div className="mt-2">
