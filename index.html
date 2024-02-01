@@ -1,1 +1,83 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/Portfolio/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Digital Solutions Company"/><link rel="apple-touch-icon" href="/Portfolio/logo192.png"/><link rel="manifest" href="/Portfolio/manifest.json"/><title>Atlarus Enterprise</title><script defer="defer" src="/Portfolio/static/js/main.fed3f085.js"></script><link href="/Portfolio/static/css/main.e00aa03e.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atlarus Enterprise"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Atlarus Enterprise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                atlarusfont: 'atlarusfont',
+            },
+            extend: {
+              colors: {
+                atlarusblue: '#59bbea',
+                atlaruspink: '#c93393',
+                atlarusblack: '#323231'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-200 font-atlarusfont">
+    <header class="bg-white p-4 text-atlarusblack text-center flex flex-row place-content-center shadow-xl">
+        <img src="logo.png" alt="Atlarus Enterprise" class="w-36 md:w-40"/>
+    </header>
+
+    <section class="container mx-auto mt-4 flex-grow grid grid-cols-2 md:grid-cols-2 gap-8 p-8 text-atlarusblack">
+        <div class="p-4 bg-white rounded-md shadow-xl col-span-2">
+            <h2 class="text-2xl font-bold mb-4">About Us</h2>
+            <p>To provide tailored and affordable digital solutions that enhance efficiency and productivity and to be a reliable partner in the growth and success for businesses.</p>
+        </div>
+        
+        <div class="p-4 bg-white rounded-md shadow-xl">
+            <h2 class="text-2xl font-bold mb-4">Our Services</h2>
+            <ul>
+                <li>Web-Based System Development</li>
+                <li>Business Process Automation</li>
+                <li>Technology Consultation</li>
+                <li>Data Analysis and Report</li>
+                <!-- Add more services as needed -->
+            </ul>
+        </div>
+
+        <div class="p-4 bg-white rounded-md shadow-xl">
+            <h2 class="text-2xl font-bold mb-4">Our Products</h2>
+            <ul>
+                <li>Enterprise Resource Planning</li>
+                <li>Financial Tracking System</li>
+                <li>Inventory Management System</li>
+                <li>Online Ordering System</li>
+                <li>Recruitment System</li>
+                <li>Augmented Reality (AR) Platform</li>
+                <li>Project Management Tool</li>
+                <li>Ticketing System</li>
+                <li>Reservation System</li>
+                <li>Directory System</li>
+                <!-- Add more products as needed -->
+            </ul>
+        </div>
+
+        <div class="p-4 bg-white rounded-md shadow-xl col-span-2 gap-8">
+            <!-- Contact Information Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">Contact Us</h3>
+                <p>Email: Atlarus.ent@gmail.com</p>
+                <p>Phone: +673 820 8611</p>
+                <!-- Add more contact information as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-atlarusblack text-white p-4 text-center shadow-xl">
+        <!-- Copyright Information -->
+        <p>&copy; 2023 Atlarus Enterprise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
