@@ -4,207 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company Name - Portfolio</title>
+    <title>Atlarus Enterprise</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Atlarus Enterprise, based in Brunei, creates digital experiences that inspire and innovate. Discover our web development, AI/ML data analytics, custom applications, and more.">
+    <meta name="keywords" content="Atlarus Enterprise, digital innovation, Brunei web development, AI, ML, data analytics, custom applications, technology consultation, business process automation">
+    <meta name="author" content="Atlarus Enterprise">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Atlarus Enterprise - Digital Innovation & Solutions in Brunei">
+    <meta property="og:description" content="Atlarus Enterprise, based in Brunei, creates digital experiences that inspire and innovate. Discover our web development, AI/ML data analytics, custom applications, and more.">
+    <meta property="og:image" content="logo.png"> <!-- Replace with the actual image URL -->
+    <meta property="og:url" content="https://atlarus.github.io/Portfolio/"> <!-- Replace with your website URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Structured Data for SEO (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Atlarus Enterprise",
+            "url": "https://atlarus.github.io/Portfolio/",
+            "logo": "logo.png",
+            "sameAs": [
+                "https://www.instagram.com/atlarusenterprise/",
+                "https://www.linkedin.com/company/atlarus-enterprise"
+            ],
+            "description": "Atlarus Enterprise, based in Brunei, creates digital experiences that inspire and innovate. Discover our web development, AI/ML data analytics, custom applications, and more."
+        }
+    </script>
+
     <!-- Font Awesome CSS (Add this link in the head section) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-        body {
-            font-family: 'atlarusfont', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f8f9fa;
-            color: #495057;
-        }
-
-        header {
-            background-color: #00a79d;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            border-bottom: 1px solid #333;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-
-        header img {
-            max-height: 80px;
-            margin: 0px auto;
-        }
-
-        section {
-            margin: 20px 50px 20px 50px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        section:hover {
-            transform: scale(1.02);
-        }
-
-        h1, h2 {
-            color: #00a79d;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #495057;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            color: #495057;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-        }
-
-        a:hover {
-            color: #2073b4;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2px;
-            background-color: #333;
-            color: white;
-        }
-
-        /* Mobile Responsive Styles */
-        @media only screen and (max-width: 600px) {
-            header img {
-                max-height: 60px;
-            }
-
-            section {
-                margin: 10px;
-                padding: 10px;
-            }
-
-            header {
-                padding: 0.5em;
-            }
-
-            section:hover {
-                transform: none;
-            }
-
-            /* Additional styles for smaller screens as needed */
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-sans text-gray-700 bg-gradient-to-r from-blue-300 via-purple-300 to-purple-200">
 
-    <header>
-        <img src="logo.png" alt="Atlarus Enterprise Logo">
+    <header class="text-center py-4">
+        <img src="logo.png" alt="Atlarus Enterprise Logo" class="max-h-20 mx-auto">
     </header>
 
     <!-- Home Section -->
-    <section id="home">
-        <div class="about-content">
-            <h2><i class="fas fa-info-circle"></i> About Atlarus Enterprise</h2>
-            <p>We are Atlarus Enterprise, creators of digital experiences that inspire and innovate. Our mission is simple – to democratize technology for all. We believe in turning ideas into powerful digital realities, making technology accessible and empowering.</p>
-            <p>At Atlarus Enterprise, we go beyond the ordinary, crafting websites that tell your unique story. Whether you're a startup or an enterprise, we are your partners in transforming visions into extraordinary digital journeys.</p>
+    <section id="home" class="mx-6 my-5 p-5 bg-white bg-opacity-50 backdrop-blur-lg border border-white rounded-lg shadow-lg">
+        <div class="about-content mb-5">
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-info-circle"></i> About Atlarus Enterprise</h2>
+            <p class="mb-3">We are Atlarus Enterprise, creators of digital experiences that inspire and innovate. Our mission is simple – to democratize technology for all. We believe in turning ideas into powerful digital realities, making technology accessible and empowering.</p>
+            <p class="mb-3">At Atlarus Enterprise, we go beyond the ordinary, crafting websites that tell your unique story. Whether you're a startup or an enterprise, we are your partners in transforming visions into extraordinary digital journeys.</p>
             <p>Join us in redefining what's possible in the digital landscape. Let's make your mark together.</p>
         </div>
 
-        <div class="mission-content">
-            <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+        <div class="mission-content mb-5">
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-bullseye"></i> Our Mission</h2>
             <p>At Atlarus Enterprise, our mission is simple yet profound – we believe in democratizing technology. We envision a world where everyone, regardless of their technical expertise, can harness the power of the digital realm to their advantage.</p>
         </div>
 
-        <div class="accessibility-content">
-            <h2><i class="fas fa-universal-access"></i> Our Commitment to Accessibility</h2>
+        <div class="accessibility-content mb-5">
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-universal-access"></i> Our Commitment to Accessibility</h2>
             <p>Accessibility is more than a feature; it's a core value. We ensure that our websites and applications are user-friendly for people of all abilities, making technology a tool that empowers, not excludes.</p>
         </div>
 
         <div class="extraordinary-content">
-            <h2><i class="fas fa-cogs"></i> Let's Build Something Extraordinary</h2>
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-cogs"></i> Let's Build Something Extraordinary</h2>
             <p>Whether you're a startup aiming to make a mark or an established enterprise looking for a digital transformation, Atlarus Enterprise is here to turn your vision into a digital reality. Let's harness the power of technology together and make your digital journey extraordinary.</p>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="mx-6 my-5 p-5 bg-white bg-opacity-50 backdrop-blur-lg border border-white rounded-lg shadow-lg">
         <div class="services-content">
-            <h2><i class="fas fa-laptop-code"></i> Our Services</h2>
-            <ul>
-                <li><strong>Web Development:</strong> Unleash the full potential of your online presence with websites crafted meticulously using the latest frameworks, ensuring a seamless and immersive user experience.</li>
-                <li><strong>Data Analytics - AI/ML:</strong> Harness the power of data-driven insights with our advanced analytics and artificial intelligence/machine learning solutions, tailored to drive informed decision-making for your business.</li>
-                <li><strong>Custom Applications:</strong> Elevate your business operations with bespoke web applications designed to meet your unique requirements, enhancing efficiency and productivity.</li>
-                <li><strong>Technology Consultation:</strong> Navigate the ever-evolving tech landscape with our expert consultation services, providing strategic insights to align technology with your business goals.</li>
-                <li><strong>Business Process Automation:</strong> Streamline and optimize your workflows with our business process automation solutions, enhancing efficiency and reducing manual efforts for increased productivity.</li>
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-laptop-code"></i> Our Services</h2>
+            <ul class="list-none pl-0 mb-3">
+                <li class="mb-2"><strong>Web Development:</strong> Unleash the full potential of your online presence with websites crafted meticulously using the latest frameworks, ensuring a seamless and immersive user experience.</li>
+                <li class="mb-2"><strong>Data Analytics - AI/ML:</strong> Harness the power of data-driven insights with our advanced analytics and artificial intelligence/machine learning solutions, tailored to drive informed decision-making for your business.</li>
+                <li class="mb-2"><strong>Custom Applications:</strong> Elevate your business operations with bespoke web applications designed to meet your unique requirements, enhancing efficiency and productivity.</li>
+                <li class="mb-2"><strong>Technology Consultation:</strong> Navigate the ever-evolving tech landscape with our expert consultation services, providing strategic insights to align technology with your business goals.</li>
+                <li class="mb-2"><strong>Business Process Automation:</strong> Streamline and optimize your workflows with our business process automation solutions, enhancing efficiency and reducing manual efforts for increased productivity.</li>
             </ul>
-            <p>At Atlarus Enterprise, we go beyond providing services; we architect transformative solutions that propel your business forward. Let's embark on a journey of innovation together.</p>
-            <a href="#contact" class="cta-button"><i class="fas fa-rocket"></i> Get Started</a>
+            <p class="mb-3">At Atlarus Enterprise, we go beyond providing services; we architect transformative solutions that propel your business forward. Let's embark on a journey of innovation together.</p>
+            <a href="#contact" class="inline-block bg-teal-600 text-white py-2 px-4 rounded-lg shadow-md transition-colors duration-300 hover:bg-teal-500"><i class="fas fa-rocket"></i> Get Started</a>
         </div>
     </section>
 
     <!-- Solutions Section -->
-    <section id="solutions">
+    <section id="solutions" class="mx-6 my-5 p-5 bg-white bg-opacity-50 backdrop-blur-lg border border-white rounded-lg shadow-lg">
         <div class="solutions-content">
-            <h2><i class="fas fa-lightbulb"></i> Our Solutions</h2>
-            <p>Empower your digital presence with our cutting-edge solutions designed to meet your unique needs:</p>
-            <ul>
-                <li><strong>Directory System:</strong> Navigate complex data structures effortlessly with our intuitive directory system, enhancing organization and accessibility.</li>
-                <li><strong>Ordering System:</strong> Revolutionize customer experiences with our dynamic ordering system, providing seamless transactions and personalized interactions.</li>
-                <li><strong>Finance Tracker:</strong> Gain financial clarity and control with our comprehensive finance tracker, offering real-time insights into your business's financial health.</li>
-                <li><strong>Augmented Reality (AR) Platform:</strong> Immerse your audience in captivating experiences with our AR platform, creating interactive and engaging content that sets you apart.</li>
-                <li><strong>Recruitment System:</strong> Streamline your hiring process with our advanced recruitment system, leveraging technology to find the best talent efficiently.</li>
-                <li><strong>Reservation System:</strong> Simplify booking and scheduling with our robust reservation system, providing a seamless experience for both clients and businesses.</li>
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-lightbulb"></i> Our Solutions</h2>
+            <p class="mb-3">Empower your digital presence with our cutting-edge solutions designed to meet your unique needs:</p>
+            <ul class="list-none pl-0 mb-3">
+                <li class="mb-2"><strong>Directory System:</strong> Navigate complex data structures effortlessly with our intuitive directory system, enhancing organization and accessibility.</li>
+                <li class="mb-2"><strong>Ordering System:</strong> Revolutionize customer experiences with our dynamic ordering system, providing seamless transactions and personalized interactions.</li>
+                <li class="mb-2"><strong>Finance Tracker:</strong> Gain financial clarity and control with our comprehensive finance tracker, offering real-time insights into your business's financial health.</li>
+                <li class="mb-2"><strong>Augmented Reality (AR) Platform:</strong> Immerse your audience in captivating experiences with our AR platform, creating interactive and engaging content that sets you apart.</li>
+                <li class="mb-2"><strong>Recruitment System:</strong> Streamline your hiring process with our advanced recruitment system, leveraging technology to find the best talent efficiently.</li>
+                <li class="mb-2"><strong>Reservation System:</strong> Simplify booking and scheduling with our robust reservation system, providing a seamless experience for both clients and businesses.</li>
             </ul>
-            <p>At Atlarus Enterprise, our solutions are not just products; they are catalysts for your digital success. Let's craft something extraordinary together.</p>
-            <a href="#contact" class="cta-button"><i class="fas fa-comments"></i> Get in Touch</a>
+            <p class="mb-3">At Atlarus Enterprise, our solutions are not just products; they are catalysts for your digital success. Let's craft something extraordinary together.</p>
+            <a href="#contact" class="inline-block bg-teal-600 text-white py-2 px-4 rounded-lg shadow-md transition-colors duration-300 hover:bg-teal-500"><i class="fas fa-comments"></i> Get in Touch</a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="">
-
+    <section id="contact" class="mx-6 my-5 p-5 bg-white bg-opacity-50 backdrop-blur-lg border border-white rounded-lg shadow-lg">
         <!-- Form Section -->
-        <div style="margin-right: 20px;">
-            <h2 style="color: #00a79d;"><i class="fas fa-envelope"></i> Contact Us</h2>
+        <div class="mb-5">
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-envelope"></i> Contact Us</h2>
             <form action="https://formspree.io/f/xrgnpeoq" method="post">
-                <label for="name" style="color: #00a79d;"><i class="fas fa-user"></i> Name:</label>
-                <input type="text" id="name" name="name" required style="border: 1px solid #00a79d; padding: 8px; border-radius: 4px; margin-bottom: 8px; width: 100%;">
-                <br/>
-                <label for="email" style="color: #00a79d;"><i class="fas fa-at"></i> Email:</label>
-                <input type="email" id="email" name="email" required style="border: 1px solid #00a79d; padding: 8px; border-radius: 4px; margin-bottom: 8px; width: 100%;">
-                <br/>
-                <label for="message" style="color: #00a79d; display: block;"><i class="fas fa-comment"></i> Message:</label>
-                <textarea id="message" name="message" required style="border: 1px solid #00a79d; padding: 8px; border-radius: 4px; margin-bottom: 8px; display: block; width: 100%;"></textarea>
-                <br/>
-                <input type="submit" value="Submit" style="background-color: #00a79d; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; width: 100%;">
+                <label for="name" class="block text-teal-600 mb-1"><i class="fas fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" required class="border border-teal-600 p-2 rounded mb-3 w-full">
+                <label for="email" class="block text-teal-600 mb-1"><i class="fas fa-at"></i> Email:</label>
+                <input type="email" id="email" name="email" required class="border border-teal-600 p-2 rounded mb-3 w-full">
+                <label for="message" class="block text-teal-600 mb-1"><i class="fas fa-comment"></i> Message:</label>
+                <textarea id="message" name="message" required class="border border-teal-600 p-2 rounded mb-3 w-full"></textarea>
+                <input type="submit" value="Submit" class="bg-teal-600 text-white py-2 px-4 rounded-lg cursor-pointer w-full">
             </form>
         </div>
 
         <!-- Contact Details Section -->
-        <div style="margin-top: 20px;">
-            <h2 style="color: #00a79d;"><i class="fas fa-address-book"></i> Contact Details</h2>
-            <p style="color: #495057;"><strong><i class="fas fa-envelope"></i> Email:</strong> Atlarus.ent@gmail.com</p>
+        <div>
+            <h2 class="text-2xl text-teal-600 mb-2"><i class="fas fa-phone"></i> Contact Details</h2>
+            <p class="mb-3"><i class="fas fa-envelope"></i> Email: atlarus.ent@gmail.com</p>
         </div>
-
     </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <!-- Add your copyright information, social media links, etc. -->
-        <div class="footer-content">
-            <p>&copy; 2024 Atlarus Enterprise. All rights reserved.</p>
-        </div>
-    </footer>
 
 </body>
 
